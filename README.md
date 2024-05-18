@@ -1,5 +1,6 @@
 # jump2mqtt
-
+> Message Queuing Telemetry Transport
+> 
 ## Git Clone
 ```
 git clone https://github.com/M-05/jump2mqtt.git
@@ -9,7 +10,11 @@ git clone https://github.com/M-05/jump2mqtt.git
 cd jump2mqtt
 pip install -r requirements.txt
 ```
-
+### Mac OS에서 mosquitto 설치 
+> MQTT broker
+```
+brew install mosquitto
+```
 ---
 
 # Kafka MQTT 실습
@@ -18,6 +23,7 @@ pip install -r requirements.txt
 </div>
 
 ## Mac OS에서 Kafka 설치
+> a distributed event store and stream-processing platform
 ### web get 설치
 ```
 brew install wget
@@ -34,6 +40,7 @@ tar xvf kafka_2.13-2.8.0.tgz
 
 ### 3개의 터미널
 #### 1.Zookeeper 실행
+> provides a centralized service
 ```
 cd kafka_2.13-2.8.0
 bin/zookeeper-server-start.sh config/zookeeper.properties
